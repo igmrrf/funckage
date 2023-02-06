@@ -1,0 +1,16 @@
+{
+  "name": "funckage",
+  "version": "0.1.1",
+  "description": "A package that hold functions I often use, maybe not found in JavaScript or there but I haven't bothered checking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lodash",
+    "nodash",
+    "functions"
+  ],
+  "author": "igmrrf",
+  "license": "ISC"
+}
