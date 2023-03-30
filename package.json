@@ -11,6 +11,9 @@
     "nodash",
     "functions"
   ],
+  "repository": {
+    "url": "https://github.com/igmrrf/funckage"
+  },
   "author": "igmrrf",
   "license": "ISC"
 }
