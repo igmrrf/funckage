@@ -1,6 +1,6 @@
 {
   "name": "funckage",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A package that hold functions I often use, maybe not found in JavaScript or there but I haven't bothered checking",
   "main": "index.js",
   "scripts": {
