@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "prepublish": "rm -rf ./src && tsc",
-    "pre": "rm -rf ./src && tsc"
+    "prepublish": "rm -rf ./src && tsc"
   },
   "keywords": [
     "lodash",

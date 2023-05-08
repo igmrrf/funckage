@@ -38,10 +38,4 @@ const getUserData (userData)=>{
 
 ### Arrays
 
-### STRINGS
-
-### OBJECTS
-
-### LOG
-
-### TYPED
+Basically a package for custom javascript functions built for browser and node.js I guess.
