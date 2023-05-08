@@ -8,7 +8,7 @@
  * @param {*} itemToUpdate
  * @returns
  */
-const updateItem = (listOfItems, itemToUpdate) => {
+export const updateItem = (listOfItems: any[], itemToUpdate: any) => {
   const item = listOfItems.find((item) => item.id === itemToUpdate.id);
   listOfItems[listOfItems.indexOf(item)] = itemToUpdate;
   return listOfItems;
@@ -20,7 +20,7 @@ const updateItem = (listOfItems, itemToUpdate) => {
  * @param {*} itemToAdd
  * @returns
  */
-const addItem = (listOfItems, itemToAdd) => {
+export const addItem = (listOfItems: any[], itemToAdd: any) => {
   listOfItems.push(itemToAdd);
   return listOfItems;
 };
@@ -31,8 +31,6 @@ const addItem = (listOfItems, itemToAdd) => {
  * @param {*} itemToDelete
  * @returns
  */
-const deleteItem = (listOfItems, itemToDelete) => {
+export const deleteItem = (listOfItems: any[], itemToDelete: any) => {
   return listOfItems.filter((item) => item.id !== itemToDelete.id);
 };
-
-module.exports = { deleteItem, addItem, updateItem };
