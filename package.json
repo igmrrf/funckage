@@ -1,15 +1,16 @@
 {
   "name": "funckage",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A package that hold functions I often use, maybe not found in JavaScript or there but I haven't bothered checking",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "prepublish": "tsc"
+    "prepublish": "rm -rf ./src && tsc",
+    "pre": "rm -rf ./src && tsc"
   },
   "keywords": [
     "lodash",
-    "nodash",
+    "hokage",
     "functions"
   ],
   "repository": {
