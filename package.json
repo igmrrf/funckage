@@ -1,7 +1,7 @@
 {
   "name": "funckage",
-  "version": "0.1.5",
-  "description": "A package that hold functions I often use, maybe not found in JavaScript or there but I haven't bothered checking",
+  "version": "0.1.6",
+  "description": "Functions to be used in the shade of greater projects.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {

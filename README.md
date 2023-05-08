@@ -38,4 +38,4 @@ const getUserData (userData)=>{
 
 ### Arrays
 
-Basically a package for custom javascript functions built for browser and node.js I guess.
+Basically a package for custom Javascript Functions to be used in the shade of greater projects.
