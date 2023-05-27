@@ -1,20 +1,23 @@
 {
   "name": "funckage",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Functions to be used in the shade of greater projects.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "prepublish": "rm -rf ./src && tsc"
+    "prepublishOnly": "rm -rf ./lib && tsc"
   },
   "keywords": [
-    "lodash",
-    "hokage",
-    "functions"
+    "Lodash",
+    "Funckage",
+    "Functions"
   ],
   "repository": {
     "url": "https://github.com/igmrrf/funckage"
   },
   "author": "igmrrf",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }
