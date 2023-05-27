@@ -1,6 +1,6 @@
 {
   "name": "funckage",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Functions to be used in the shade of greater projects.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -19,5 +19,6 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.0.4"
-  }
+  },
+  "files": ["/lib"]
 }
