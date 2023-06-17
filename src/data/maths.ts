@@ -1,5 +1,13 @@
 import { log } from '../simple';
 
+/**
+ * @description Find the compound Intrest 
+ * @param {*} amount
+ * @param {*} percentage
+ * @param {*} period
+ * @returns
+ */
+
 export const compound = (
   amount: number,
   percentage: number,
