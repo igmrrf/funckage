@@ -5,7 +5,7 @@ import { log } from '../simple';
  * @param {*} amount
  * @param {*} percentage
  * @param {*} period
- * @returns
+ * @returns compound intrest result 
  */
 
 export const compound = (
