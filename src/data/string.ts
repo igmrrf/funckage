@@ -1,9 +1,21 @@
 import { countryCodes } from '../constants';
 import { log } from '../simple';
 
+/**
+ * @description Capitalise the first letter of a sentence
+ * @param {*} word
+ * @returns Capitalized String 
+ */
+
 export const capitalize = (word: string) => {
   return word.charAt(0).toUpperCase() + word.slice(1);
 };
+
+/**
+ * @description Remove country code from a list of phone numbers
+ * @param {*} numbers
+ * @returns Removes country code 
+ */
 
 export const removeCountryCode = (numbers: number[]) => {
   const cleaned = numbers.map((each) =>
@@ -13,6 +25,12 @@ export const removeCountryCode = (numbers: number[]) => {
   );
   return cleaned;
 };
+
+/**
+ * @description Add country code from a list of phone numbers
+ * @param {*} numbers
+ * @returns Adds country code 
+ */
 
 export const addCountryCode = (numbers: number[]) => {
   const cleaned = numbers.map((each) =>
