@@ -25,3 +25,6 @@ export const compound = (
   }
   log(`Compound Interest Result: ${total.toFixed(2)}`);
 };
+
+
+
