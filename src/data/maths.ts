@@ -1,5 +1,13 @@
 import { log } from '../simple';
 
+/**
+ * @description Find the compound Intrest 
+ * @param {*} amount
+ * @param {*} percentage
+ * @param {*} period
+ * @returns compound intrest result 
+ */
+
 export const compound = (
   amount: number,
   percentage: number,
@@ -17,3 +25,6 @@ export const compound = (
   }
   log(`Compound Interest Result: ${total.toFixed(2)}`);
 };
+
+
+

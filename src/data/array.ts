@@ -25,6 +25,7 @@ export const addItem = (listOfItems: any[], itemToAdd: any) => {
   return listOfItems;
 };
 
+
 /**
  * @description Delete an item from a list of items
  * @param {*} listOfItems
