@@ -16,7 +16,7 @@ export const getWithExpiry = (key: string) => {
 
 export const setWithExpiry = (
   key: string,
-  value: object | string | number,
+  value: object | string | number | any,
   ttl: number = 86400
 ) => {
   const now = new Date();

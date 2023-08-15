@@ -5,6 +5,7 @@
  */
 
 export type Action = { type: string; payload: object };
+
 export const redux_logger =
   (store: object | any) =>
   (next: (action: Action) => void) =>

@@ -34,3 +34,20 @@ export const addItem = (listOfItems: any[], itemToAdd: any) => {
 export const deleteItem = (listOfItems: any[], itemToDelete: any) => {
   return listOfItems.filter((item) => item.id !== itemToDelete.id);
 };
+
+/**
+ * @description Finds an item in an array or throws an error with custom message
+ * @param array
+ * @param predicate
+ * @param errMsg
+ * @returns
+ */
+export const findOrThrow = <T>(
+  array: Array<T>,
+  predicate: (t: T) => boolean,
+  errMsg: string
+): T => {
+  const t = array.find(predicate);
+  if (!t) throw new Error(errMsg);
+  return t;
+};
