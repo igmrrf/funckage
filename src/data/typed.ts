@@ -20,11 +20,11 @@ export const decorator = (
 
 const compose =
   (...functions: any[]) =>
-  (str: object | number | string | any) => {
-    functions.reduceRight((int, func) => {
-      int = func(int);
-    }, str);
-  };
+    (str: object | number | string | any) => {
+      functions.reduceRight((int, func) => {
+        int = func(int);
+      }, str);
+    };
 
 export const composeFunctions = compose();
 
@@ -35,8 +35,8 @@ type BuildArrayOf<
   Current extends Type[]
 > = Current['length'] extends Count
   ? Quantifier extends 'exactly'
-    ? [...Current]
-    : [...Current, ...Type[]]
+  ? [...Current]
+  : [...Current, ...Type[]]
   : BuildArrayOf<Quantifier, Count, Type, [...Current, Type]>;
 
 /** An array of a given type comprised of either exactly or at least a certain count of that type. */
@@ -46,17 +46,25 @@ type ArrayOf<
   Type
 > = BuildArrayOf<Quantifier, Count, Type, []>;
 
-declare function needsExactlyTwo(strings: ArrayOf<'exactly', 2, string>): void;
-
-needsExactlyTwo(['onlyOne']); // error
-needsExactlyTwo(['one', 'two']); // valid
-needsExactlyTwo(['one', 'two', 'three']); // error
-
-declare function needsAtLeastThree(
-  strings: ArrayOf<'at least', 3, string>
-): void;
-
-needsAtLeastThree(['onlyOne']); // error
-needsAtLeastThree(['one', 'two']); // error
-needsAtLeastThree(['one', 'two', 'three']); // valid
-needsAtLeastThree(['one', 'two', 'three', 'four']); // valid
+/**
+ *
+ * @param {object} data
+ * @param {string} name
+ * @param {string} type
+ * @returns
+ */
+export const validateType = (
+  data: object | any,
+  name: string | number,
+  type: string
+) => {
+  const isNamePresent = name in data;
+  if (!isNamePresent) {
+    return { message: `${name} is required`, valid: false };
+  }
+  const value = data[name];
+  if (typeof value !== type) {
+    return { message: `${name} must be a number`, valid: false };
+  }
+  return { message: 'success', valid: true };
+};

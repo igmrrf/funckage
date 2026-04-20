@@ -18,7 +18,10 @@
   "author": "igmrrf",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.15.3",
     "typescript": "^5.0.4"
   },
-  "files": ["/lib"]
+  "files": [
+    "/lib"
+  ]
 }

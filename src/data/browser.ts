@@ -1,5 +1,8 @@
 export type ValueStore = string;
 
+/**
+ * @param key
+ */
 export const getWithExpiry = (key: string) => {
   const stored = localStorage.getItem(key);
   if (!stored) {
@@ -14,6 +17,11 @@ export const getWithExpiry = (key: string) => {
   return value;
 };
 
+/**
+ * @param key
+ * @param value
+ * @param ttl
+ */
 export const setWithExpiry = (
   key: string,
   value: object | string | number | any,
